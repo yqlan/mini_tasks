@@ -8,7 +8,7 @@ awk '($10!="*"){
           for (k in sample){print sample[k],k}
           }' JoeEdward_trial.txt | 
 sort -n -k 1,1 |
-awk '{if(NR<17){printf "%s ",$2}else{printf "%s\n",$2}}' > sample.txt  ## sample-1  ##
+awk '{if(NR<17){printf "%s ",$2}else{printf "%s\n",$2}}' > sample.txt  ## here, 17 = sample# - 1  ##
 
 ###########################################################################################################################################
 awk '($10!="*"){
